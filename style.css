@@ -1,37 +1,32 @@
 body {
     color: white;
     background-color: rgb(83, 78, 78);
-    font-family: 'Bangers',cursive;
-    text-shadow: 10px, rg
-    
+    font-family: 'Bangers', cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Corrige o texto e suaviza a sombra */
 }
-
-
 
 #lista {
     background-color: rgb(27, 26, 26);
     text-align: center;
     color: white;
     padding: 15px;
-    margin: -5px;
+    margin: 0; /* Remove a margem negativa desnecessária */
     text-decoration: underline;
-    border-style: solid;
+    border: 2px solid white; /* Define um estilo mais visível para a borda */
     font-size: 15px;
-    font-family: 'Bangers',cursive;
- 
+    font-family: 'Bangers', cursive;
 }
 
 main {
     display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
     justify-content: center;
     padding: 20px;
-
-
 }
 
 .capitulo {
-    flex: 0 0 30%; 
-    margin: 10px; 
+    flex: 0 0 30%; /* Mantém o layout flexível */
+    margin: 10px;
     text-align: center;
 }
 
@@ -39,18 +34,16 @@ main {
     width: 80%; 
     height: auto; 
     max-width: 300px;
-border-style: solid;
-border-color: white;
-
-}
-a:visited{
-color: white;
+    border: 2px solid white; /* Ajusta o estilo da borda */
 }
 
-.capitulo img:hover{
-transform: scale(1.1);
-transition: 0.3 ease;
-filter: brightness(0.5);
+a:visited {
+    color: white; /* Define uma cor para links visitados */
+    text-decoration: none; /* Remove o sublinhado */
+}
 
-
+.capitulo img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease, filter 0.3s ease; /* Corrige a sintaxe do transition */
+    filter: brightness(0.8); /* Ajusta o brilho para efeito hover */
 }
