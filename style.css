@@ -2,7 +2,9 @@ body {
     color: white;
     background-color: rgb(83, 78, 78);
     font-family: 'Bangers', cursive;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Corrige o texto e suaviza a sombra */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    min-height: 130vh;
+    margin: 0;
 }
 
 #lista {
@@ -10,22 +12,22 @@ body {
     text-align: center;
     color: white;
     padding: 15px;
-    margin: 0; /* Remove a margem negativa desnecessária */
+    margin: 0;
     text-decoration: underline;
-    border: 2px solid white; /* Define um estilo mais visível para a borda */
+    border: 2px solid white; 
     font-size: 15px;
     font-family: 'Bangers', cursive;
 }
 
 main {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+    flex-wrap: wrap; 
     justify-content: center;
     padding: 20px;
 }
 
 .capitulo {
-    flex: 0 0 30%; /* Mantém o layout flexível */
+    flex: 0 0 30%; 
     margin: 10px;
     text-align: center;
 }
@@ -34,16 +36,17 @@ main {
     width: 80%; 
     height: auto; 
     max-width: 300px;
-    border: 2px solid white; /* Ajusta o estilo da borda */
+    border: 2px solid white;
 }
 
-a:visited {
-    color: white; /* Define uma cor para links visitados */
-    text-decoration: none; /* Remove o sublinhado */
-}
+
+
+
+
 
 .capitulo img:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease, filter 0.3s ease; /* Corrige a sintaxe do transition */
-    filter: brightness(0.8); /* Ajusta o brilho para efeito hover */
+    transition: transform 0.3s ease, filter 0.3s ease; 
+    filter: brightness(0.8); 
 }
+
